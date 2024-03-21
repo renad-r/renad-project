@@ -1,0 +1,20 @@
+# Django Views Comments:
+
+# View function for the home page
+# - Retrieves all quotes
+# - Renders the home page template with the retrieved quotes
+
+# View function for adding a new quote
+# - Handles form submission for adding a new quote
+# - Extracts quote text and author from the form data
+# - Creates a new Quote object and saves it to the database
+# - Redirects the user back to the home page after adding the quote
+
+# View function for displaying the details of a specific quote
+# - Retrieves the quote with the given ID from the database
+# - Renders the quote detail page template with the retrieved quote
+
+# View function for displaying the user's profile and their added quotes
+# - Retrieves the current user (assuming user authentication is implemented)
+# - Retrieves quotes added by the current user from the database
+# - Renders the profile page template with the current user and their quotes
