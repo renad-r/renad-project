@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+</head>
+<body>
+    <h1>Latest Quotes</h1>
+    <ul>
+        {% for quote in quotes %}
+        <li><a href="{% url 'quote_detail' quote.id %}">{{ quote.text }}</a> - {{ quote.author }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_quote' %}">Add Quote</a>
+    <a href="{% url 'profile' %}">Profile</a>
+</body>
+</html>

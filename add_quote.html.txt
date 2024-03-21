@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Quote</title>
+</head>
+<body>
+    <h1>Add Quote</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="text">Quote:</label><br>
+        <textarea name="text" rows="4" cols="50"></textarea><br>
+        <label for="author">Author:</label><br>
+        <input type="text" name="author"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
