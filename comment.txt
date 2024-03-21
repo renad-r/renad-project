@@ -1,4 +1,6 @@
-# Django Views Comments:
+# Django project Comments:
+
+# in this step of project we develop the general structure of our project including:
 
 # View function for the home page
 # - Retrieves all quotes
